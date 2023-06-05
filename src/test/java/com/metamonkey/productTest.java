@@ -22,16 +22,17 @@ public class productTest {
     public void checkAdd(){
         productaddchange.addProduct(product);
         productaddchange.printProduct(product);
+
     }
 
-//    @DisplayName("제거가 잘 되는지 확인")
-//    @Test
-//    public void checkDelete(){
-//        productaddchange.deleteProduce(product);
-//        Assertions.assertThrows(
-//                NoClassDefFoundError.class,
-//                () -> productaddchange.deleteProduce(product)
-//        );
-//    }
+    @DisplayName("제거가 잘 되는지 확인")
+    @Test
+    public void checkDelete(){
+        productaddchange.deleteProduce(product);
+        Assertions.assertThrows(
+                NoClassDefFoundError.class,
+                () -> productaddchange.deleteProduce(product)
+        );
+    }
 
 }

@@ -17,11 +17,12 @@ public class PurchaseProductTest {
     public void purchaseProduct() {
 
         //given
-        int money = 50000;
-        int item = 100000;
+        int money = 40000;
+        int item = 30000;
 
         //when & then
         Assertions.assertThrows(IllegalArgumentException.class,
             () -> purchase.purchaseProduct(money, item));
+
     }
 }

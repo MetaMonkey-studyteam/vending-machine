@@ -14,7 +14,7 @@ public class productAddChange {
             System.out.println(num);
 
             System.out.print("몇개의 상품을 추가할까요? : ");
-            int number=sc.nextInt();
+            Integer number=sc.nextInt();
             for (;number>0;number--){
                 System.out.println("추가할 상품의 이름과 가격을 입력해 주세요");
                 System.out.print("상품 이름 : ");
@@ -29,7 +29,7 @@ public class productAddChange {
 
         public void deleteProduce(HashMap<String,Integer> product){
             System.out.println("제거할 상품의 이름을 입력해주세요 : ");
-            Scanner sc=new Scanner(System.in);
+            Scanner sc = new Scanner(System.in);
             System.out.print("상품 이름 : ");
             String name= sc.next();
 
@@ -44,7 +44,7 @@ public class productAddChange {
         public void printProduct(HashMap<String,Integer> product) {
             for (String key : product.keySet()) {
                 Integer value = product.get(key);
-                System.out.println("제풀 : "+key + ", 가격 : " + value);
+                System.out.println("상품이름 : "+key + ", 가격 : " + value);
             }
         }
 }

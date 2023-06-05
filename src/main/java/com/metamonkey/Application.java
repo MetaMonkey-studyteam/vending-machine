@@ -12,6 +12,5 @@ public class Application {
         productAddChange.printProduct(product);
         productAddChange.deleteProduce(product);
         productAddChange.printProduct(product);
-
     }
 }
